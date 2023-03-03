@@ -1,0 +1,67 @@
+.attribution
+ {
+    font-size: 11px; text-align: center;
+   }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background-color: hsl(218, 23%, 16%);
+
+}
+.advice-card{
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+background-color: hsl(217, 19%, 24%);
+ min-height: 300px;
+ padding: 2rem 1.5rem;
+ border-radius: 20px;
+}
+.advice-card .Advice{
+  margin-top: 25px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.advice-card p:first-child{
+  color: hsl(150, 100%, 66%);
+}
+.advice-card button{
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  padding: 0.9rem 0.9rem 0.7rem 0.9rem;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  background: hsl(150, 100%, 66%);
+}
+.mob-div{
+  display: none;
+}
+
+@media(max-width:40em){
+.advice-card{
+  width: 400px;
+}
+.mob-div{
+display: block;
+width: 100%;
+}
+.desk-div{
+  display: none;
+}
+.advice-card button{
+left: 42%;  
+}
+}
